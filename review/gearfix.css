@@ -1,0 +1,150 @@
+* {
+  margin: 0; padding: 0; border: 0; box-sizing: border-box;
+}
+
+body {
+  font-family: verdana; background-color: #FFFFFF;
+}
+
+#container {
+  width: 1000px; min-height: 700px; margin: 10px auto;
+  background-color: gray;
+}
+
+header {
+  min-height: 140px; background-color: tan;
+  padding: 8px;
+  position: relative;
+}
+
+main {
+  min-height: 400px; background-color: yellow;
+}
+
+footer {
+  min-height: 200px; background-color: #CFC;
+}
+
+#sidebar {
+  width: 250px; background-color: green;
+  min-height: 400px;
+  float: right;
+}
+
+#main1 {
+  min-height: 400px; background-color: skyblue;
+  margin-right: 250px;
+}
+
+#outerbox1, #outerbox2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.innerbox {
+  flex: 1 0 auto;
+  background-color: blue;
+  min-height: 180px;
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+  background-image: url(gearfix-skier.jpg);
+  background-repeat: no-repeat;
+  background-size: 750px;
+}
+
+#outerbox1 .innerbox:nth-child(1) {
+  background-position: 0% 50%;
+}
+
+#outerbox1 .innerbox:nth-child(2) {
+  background-position: 50% 50%;
+}
+
+#outerbox1 .innerbox:nth-child(3) {
+  background-position: 100% 50%;
+}
+
+#outerbox2 .innerbox:nth-child(1) {
+  background-position: 0% 100%;
+}
+
+#outerbox2 .innerbox:nth-child(2) {
+  background-position: 50% 100%;
+}
+
+#outerbox2 .innerbox:nth-child(3) {
+  background-position: 100% 100%;
+}
+
+#outerbox1 .innerbox {
+  min-height: 220px;
+}
+
+.homelogo {
+  display: block;
+  width: 260px; height: 100px;
+  float: left;
+}
+
+.homelogo img {
+  width: 100%;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav li {
+  float: left; width: 80px; height: 100px;
+  margin: 4px;
+}
+
+header nav a {
+  display: block; width: 100%; height: 100%;
+  background-color: #555;
+  color: #FFF; text-decoration: none;
+  text-align: center;
+  line-height: 150px;
+  background-image: url(gearfix-nav.png);
+  background-size: 160px;
+  background-repeat: no-repeat;
+  background-position: -80px 5px;
+  border-radius: 3px;
+}
+
+header nav a:hover {
+  background-position: 0px 5px;
+  background-color: #000;
+}
+
+.searchform {
+  position: absolute; top: 5px; right: 5px;
+}
+
+#sidebar h1 {
+  font-size: 1.6em; text-align: center;
+  padding: 4px;
+  border-bottom: 1px solid black;
+}
+
+#sidebard h2 {
+  font-size: 1.3em;
+  padding: 4px;
+}
+
+#sidebar table {
+  border: 1px solid black;
+  margin: 4px;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+#sidebar td {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+#sidebar img {
+  width: 230px;
+  margin: 10px;
+}
