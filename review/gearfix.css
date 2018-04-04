@@ -22,7 +22,8 @@ main {
 }
 
 footer {
-  min-height: 200px; background-color: #CFC;
+  min-height: 200px; background-color: tan;
+  text-align: center;
 }
 
 #sidebar {
