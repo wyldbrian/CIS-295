@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Flexbox | Web Development</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="author" content="Brian Spaulding">
+
+  <style>
+
+  body {
+    font-family: verdana; color: #999;
+  }
+
+  body > div {
+    background-color: #123; margin: 40px 0px; padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  body > div div {
+    background-color: #ABC; padding: 50px; margin: 5px;
+    text-align: center;
+  }
+
+  .parent1 div { flex: 1 1 auto; }
+  .parent2 div { flex: 1 1 150px; }
+  .parent3 div { flex: 1 1 25%; }
+  .parent4 div { flex: 1 1 40%; }
+
+  </style>
+
+</head>
+
+<body>
+  <h1>Flexbox</h1>
+
+  <div class="parent1">
+    <div>1</div>
+    <div style="flex-grow:3">2</div>
+    <div style="flex-shrink:3">3</div>
+    <div>4</div>
+    <div>5</div>
+  </div>
+
+  <div class="parent2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </div>
+
+  <div class="parent3">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </div>
+
+  <div class="parent4">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </div>
+
+</body>
+</html>
