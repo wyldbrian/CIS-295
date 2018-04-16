@@ -1,3 +1,45 @@
 * {
 	margin: 0; padding: 0; border: 0; box-sizing: border-box;
 }
+
+body {
+  background-color: gray;
+}
+
+#container {
+  width: 90%;
+  margin: 25px auto;
+  min-height: 640px;
+  min-width: 640px;
+}
+
+#header {
+  height: 150px;
+  background-color: green;
+  margin: 25px;
+}
+
+#hero {
+  height: 400px;
+  background-color: blue;
+  margin: 25px;
+}
+
+#flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+#flex > div {
+  width: 30%;
+  height: 220px;
+  background-color: red;
+}
+
+#footer {
+  height: 150px;
+  background-color: green;
+  margin: 25px;
+}
