@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: gray;
+  background-color: #373636;
 }
 
 #container {
@@ -14,32 +14,165 @@ body {
 }
 
 #header {
-  height: 150px;
-  background-color: green;
+  height: 200px;
+  background-color: #E1C1A1;
   margin: 25px;
+	border-radius: 15px;
+}
+
+#logo {
+	display: block;
+	float: left;
+}
+
+#header img {
+	height: 180px;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+#header nav {
+  height: 200px;
+	padding-top: 75px;
+	float: left;
+	margin-left: 100px;
+}
+
+#header nav ul {
+  margin: auto;
+  list-style-type: none;
+}
+
+#header nav li {
+  width: 250px;
+  float: left;
+}
+
+#header nav li a {
+  display: block;
+  height: 50px;
+  background-color: #8F0E0E;
+  color: white;
+  font-weight: bold;
+  font-family: verdana;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 120%;
 }
 
 #hero {
-  height: 400px;
-  background-color: blue;
+  height: 500px;
+  background-color: #E1C1A1;
   margin: 25px;
+	border-radius: 15px;
+	background-image: url(../images/dogsandcats.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	position: relative;
+}
+
+#calltoaction {
+  display: block;
+  width: 220px; height: 80px;
+  border-radius: 8px;
+  font-weight: bold;
+	font-size: 1.4em;
+  background-color: red;
+  opacity: 0.8;
+  color: black;
+  line-height: 80px;
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+  top: 75px;
+  left: 75px;
 }
 
 #flex {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin: 25px;
+  margin-left: 25px;
+	margin-right: 25px;
 }
 
 #flex > div {
   width: 30%;
+	min-width: 400px;
   height: 220px;
   background-color: red;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 15px;
+}
+
+#flex > div:nth-child(1) {
+	background-image: url(../images/dogsandcats2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#flex > div:nth-child(2) {
+	background-image: url(../images/dogsandcats3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#flex > div:nth-child(3) {
+	background-image: url(../images/dogsandcats4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 #footer {
-  height: 150px;
-  background-color: green;
+  height: 100px;
+  background-color: #E1C1A1;
   margin: 25px;
+	border-radius: 15px;
+}
+
+#footer nav {
+  width: 100%;
+  height: 100px;
+  margin: 20px auto;
+}
+
+#footer nav ul {
+  width: 1000px;
+  height: 100px;
+  list-style-type: none;
+	margin: auto;
+}
+
+#footer nav ul li {
+  height: 50px;
+	width: 250px;
+  float: left;
+	margin-top: 25px;
+	margin-bottom: 25px;
+  background-color: black;
+  border-left: 1px solid gray;
+}
+
+#footer nav ul li a {
+  display: block;
+  height: 50px;
+  background-color: #8F0E0E;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#footer nav ul li a:hover {
+  background-color: white;
+  color: black;
 }
