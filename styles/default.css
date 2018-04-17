@@ -4,18 +4,48 @@
 	margin: 0; padding: 0; border: 0; box-sizing: border-box;
 }
 
+html {
+	min-height: 100%;
+}
+
 body {
 	background-color: #1a1a1a;
+	background-repeat: no-repeat;
 }
 
 .container {
   width: 85%;
-  min-width: 640px;
+  min-width: 1000px;
+	min-height: 720px;
   margin: 25px auto;
   padding: 25px;
   border-radius: 10px;
-  min-height: 480px;
   background-color: darkgray;
+	position: relative;
+}
+
+#logoleft {
+	position: absolute;
+	left: 25px;
+	top: 25px;
+}
+
+#logoleft img {
+	height: 175px;
+	border: 4px double black;
+	border-radius: 30px 15px 30px 15px;
+}
+
+#logoright {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+}
+
+#logoright img {
+	height: 175px;
+	border: 4px double black;
+	border-radius: 15px 30px 15px 30px;
 }
 
 .header {
@@ -26,8 +56,39 @@ body {
   border-radius: 15px;
   font-family: Raleway;
   text-align: center;
-  background-color: white;
+  background-color: #B93333;
+	background: linear-gradient(to bottom right,#CD6812, #FEE3CC);
   line-height: 1.5;
+	margin-bottom: 100px;
+}
+
+.assignments {
+	float: left;
+}
+
+.assignments li {
+	list-style-type: none;
+}
+
+.assignments a {
+  display: block;
+  margin: 10px auto;
+  width: 225px;
+  height:  30px;
+  line-height: 26px;
+  border: 2px solid white;
+  text-decoration: none;
+	text-align: center;
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  opacity: 0.9;
+}
+
+.assignments a:hover {
+	background-color: white;
+	border: 2px solid black;
+	color: black;
 }
 
 .desc {
@@ -36,18 +97,13 @@ body {
   margin: 25px auto;
   font-family: Raleway;
   text-align: center;
+	float: left;
 }
 
-.desc a {
-  display: block;
-  margin: 25px auto;
-  width: 225px;
-  height:  30px;
-  line-height: 26px;
-  border: 2px solid white;
-  text-decoration: none;
-  background-color: black;
-  font-weight: bold;
-  color: white;
-  opacity: 0.9;
+.desc h2, p {
+	padding: 10px 50px 10px 50px;
+}
+
+.desc p {
+	font-size: 1.2em;
 }
