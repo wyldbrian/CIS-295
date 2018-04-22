@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Web Layout #2</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="author" content="Brian Spaulding">
+
+  <style>
+
+  #container {
+    width: 80%;
+    min-height: 720px;
+    margin: 25px auto;
+  }
+
+  #header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  #header div {
+    background-color: black;
+    height: 50px;
+  }
+
+  #header div:nth-child(1) {
+    align-self: flex-start;
+    width: 22%;
+  }
+
+  #header div:nth-child(2) {
+    margin-left: auto;
+    width: 12%;
+  }
+
+  #header div:nth-child(3) {
+    margin-left: 50px;
+    width: 12%;
+  }
+
+  #header div:nth-child(4) {
+    margin-left: 50px;
+    width: 12%;
+  }
+
+  #mainflex {
+    min-height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  #mainflex div {
+    height: 200px;
+    width: 31%;
+    background-color: black;
+    margin-bottom: 25px;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+<div id="container">
+  <div id="header">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div id="text">
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </h1>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </h2>
+  </div>
+  <div id="mainflex">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

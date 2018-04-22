@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Web Layout #1</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="author" content="Brian Spaulding">
+
+  <style>
+
+    #container {
+      width: 80%;
+      min-height: 720px;
+      margin: 25px auto;
+    }
+
+    #header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      margin-bottom: 25px;
+    }
+
+    #header div {
+      background-color: black;
+      height: 100px;
+    }
+
+    #header div:nth-child(1) {
+      align-self: flex-start;
+      width: 22%;
+    }
+
+    #header div:nth-child(2) {
+      margin-left: auto;
+      width: 8%;
+    }
+
+    #header div:nth-child(3) {
+      margin-left: 25px;
+      width: 8%;
+    }
+
+    #hero {
+      width: 100%;
+      height: 500px;
+      background-color: black;
+      margin-bottom: 25px;
+    }
+
+    #footer {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    #footer > div {
+      width: 23%;
+      background-color: black;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+
+<div id="container">
+  <div id="header">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div id="hero">
+  </div>
+  <div id="footer">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
