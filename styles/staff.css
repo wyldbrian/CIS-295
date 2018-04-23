@@ -1,0 +1,44 @@
+* {
+	margin: 0; padding: 0; border: 0; box-sizing: border-box;
+}
+
+#container {
+  width: 80%;
+  margin: 25px auto;
+}
+
+#header {
+  height: 150px;
+  border: 1px solid red;
+  margin-bottom: 25px;
+}
+
+#sidebar {
+  width: 25%;
+  height: 600px;
+  float: left;
+  border: 1px solid red;
+  padding: 25px;
+}
+
+#grid {
+  display: grid;
+  grid-gap: 1%;
+  grid-template-columns: auto auto auto auto;
+  grid-rows: auto auto;
+  width: 75%;
+  height: 600px;
+  float: left;
+  padding-left: 25px;
+}
+
+.staff {
+  background-color: black;
+  border-radius: 10px;
+}
+
+.staff a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
