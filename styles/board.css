@@ -120,7 +120,7 @@ body {
 #board > div {
   background-color: black;
   width: 25%;
-  min-width: 300px;
+  min-width: 325px;
   height: 250px;
   margin: 10px;
   border-radius: 10px;
@@ -145,6 +145,7 @@ body {
 
 .name {
   margin-top: 50px;
+  margin-bottom: 5px;
   width: 50%;
   display: block;
   text-align: center;
@@ -159,8 +160,20 @@ body {
 }
 
 .members p {
-  margin-top: 100px;
   padding: 10px;
   color: white;
   text-align: center;
+}
+
+.email {
+  display: block;
+  text-align: center;
+  font-family: Raleway;
+  font-size: .8em;
+  font-style: italic;
+  color: white;
+}
+
+.email:hover {
+  color: darkgray;
 }
