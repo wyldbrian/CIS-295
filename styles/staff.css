@@ -41,6 +41,7 @@ body {
 	font-style: verdana;
 	border-radius: 10px;
 	background-color: #8b9dc3;
+	border: 10px double black;
 }
 
 #sidebar {
