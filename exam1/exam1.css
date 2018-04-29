@@ -1,0 +1,170 @@
+* {
+	margin: 0; padding: 0; border: 0; box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+}
+
+#header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  height: 103px;
+  background-color: black;
+}
+
+#headercontent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: 63px;
+  margin: auto;
+}
+
+#mainlog {
+   display: block;
+}
+
+
+#menu li{
+  float: left;
+  list-style-type: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#menu li a {
+  text-decoration: none;
+  font-family: verdana;
+  line-height: 63px;
+  color: white;
+}
+
+#menu li a:hover {
+  color: yellow;
+}
+
+#login {
+  display: block;
+  text-decoration: none;
+  color: white;
+  line-height: 63px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: verdana;
+}
+
+#login:hover {
+  color: yellow;
+}
+
+#searchform {
+  width: 1000px;
+  height: 150px;
+  margin-top: 130px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#searchform legend {
+  font-size: 120%;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#searchform label {
+  padding-bottom: 10px;
+}
+
+#searchflex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  width: 100px;
+}
+
+#gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  min-height: 600px;
+  margin: 25px auto;
+}
+
+#galleryflex1 {
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#galleryflex1 a {
+  display: block;
+  width: 33%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+#galleryflex1 img {
+  width: 100%;
+  height: 100%;
+}
+
+#galleryflex2 {
+  height: 400px;
+  display: flex;
+  width: 50%;
+}
+
+#galleryflex2 a {
+  display: block;
+  width: 98%;
+  height: 100%;
+}
+
+#galleryflex2 img {
+  width: 100%;
+  height: 400px;
+}
+
+#galleryflex3 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+#galleryflex3 a {
+  display: block;
+  width: 49%;
+  height: 49%;
+}
+
+#galleryflex3 img {
+  width: 100%;
+  height: 200px;
+}
+
+#area, #difficulty, #duration {
+  width: 175px;
+  height: 25px;
+  border: 2px solid lightgray;
+}
