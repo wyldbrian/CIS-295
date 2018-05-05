@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Quiz 3 - Zipcar Form</title>
+
+	<meta name="author" content="Brian Spaulding">
+	<meta name="description" content="Quiz 3 - Zipcar Form">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <style>
+
+  body {
+    font-family: verdana;
+  }
+
+  #container {
+    width: 60%;
+    min-width: 950px;
+    min-height: 600px;
+    margin: 5% auto;
+  }
+
+  #bluebar {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    border: 1px solid #bce8f1;
+    border-radius: 5px;
+    margin: 25px auto;
+    color: #31708f;
+    background-color: #d9edf7;
+  }
+
+  #bluebar a {
+    text-decoration: none;
+    color: #f58025;
+  }
+
+  #bluebar a:hover {
+    text-decoration: underline;
+  }
+
+  #flex {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 500px;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  #form {
+    width: 50%;
+  }
+
+  #form h1 {
+    color: #f58025;
+    text-transform: lowercase;
+    margin-bottom: 1em;
+    font-size: 25px;
+    line-height: 1em;
+  }
+
+  #form label {
+    font-weight: bold;
+    margin-right: 25px;
+  }
+
+  #form div {
+    float: right;
+    clear: both;
+    margin-top: 10px;
+  }
+
+  #form div p {
+    display: block;
+    font-size: 65%;
+    font-weight: bold;
+    color: gray;
+    width: 250px;
+    margin-left: auto;
+    margin-right: 0px;
+  }
+
+  #form div p a {
+    text-decoration: none;
+    color: #f58025;
+  }
+
+  #form div p a:hover {
+    text-decoration: underline;
+  }
+
+  #form #name, #email, #pass, #repass {
+    border-radius: 5px;
+    height: 30px;
+    width: 250px;
+  }
+
+  #box {
+    width: 50%;
+    min-width: 250px;
+  }
+
+  #expect {
+    width: 50%;
+    min-width: 250px;
+    margin: 75px auto;
+  }
+
+  #expect div:nth-child(1) {
+    text-align: center;
+    background-color: #51A601;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  #expect div:nth-child(2) {
+    border: 1px solid lightgray;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  #continuediv {
+    height: 50px;
+    margin-right: 125px;
+  }
+
+  #continue {
+    background: #ee8233;
+    color: white;
+    font-weight: bold;
+    font-size: 110%;
+    border: none;
+    width: 125px;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  #continue:hover {
+    opacity: 0.7;
+  }
+
+  </style>
+
+
+</head>
+
+<body>
+
+<div id="container">
+
+  <div id="bluebar">
+    Returning to finish the sign-up process? Already have a Zipcar account? | <a href="#">Sign in!</a>
+  </div>
+
+  <div id="flex">
+    <form id="form" method="post" action="#">
+        <h1>create a profile</h1>
+
+        <div id="userdiv">
+          <label for="name">Username</label>
+          <input type="text" id="name" required>
+          <p>(not case-sensitive)</p>
+        </div>
+
+        <div id="emaildiv">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" required>
+          <p>We'll never share your email; see our <a href="#">privacy policy</a>.</p>
+        </div>
+
+        <div id="passdiv">
+          <label for="pass">Password</label>
+          <input type="text" id="pass" required>
+          <p>Passwords must be at least 8 characters and include a number or special character.</p>
+        </div>
+
+        <div id="repassdiv">
+          <label for="repass">Re-type Password</label>
+          <input type="text" id="repass" required>
+        </div>
+
+        <div id="continuediv">
+          <input id="continue" type="submit" value="continue">
+        </div>
+
+      </form>
+    <div id="box">
+      <div id="expect">
+        <div>what to expect</div>
+        <div>
+          <ul>
+            <li>Please have your driver's license and payment info on hand.</li>
+            <li>You can drive once you're approved and receive your Zipcard.</li>
+          </ul>
+        </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+</body>
+
+</html>
