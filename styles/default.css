@@ -26,6 +26,7 @@ body {
   border-radius: 10px;
   background-color: rgb(25, 25, 25, 0.9);
 	position: relative;
+	border: 5px solid white;
 }
 
 #logoleft {
@@ -228,6 +229,8 @@ textarea {
 	height: 75px;
 	background-color: rgb(25, 25, 25, 0.9);
 	border-radius: 15px;
+	border: 5px solid white;
+	box-sizing: content-box;
 }
 
 .footermenu ul li {
@@ -260,7 +263,7 @@ textarea {
 }
 
 .footermenu ul li a:hover {
-	line-height: 71px;
+	line-height: 69px;
 	background-color: rgb(25, 25, 25, 0.3);
-	border: 2px solid white;
+	border: 3px solid lightblue;
 }
