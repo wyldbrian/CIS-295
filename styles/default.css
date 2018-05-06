@@ -19,7 +19,7 @@ body {
 .container {
   width: 80%;
   min-width: 1000px;
-	min-height: 800px;
+	min-height: 750px;
   margin: 0px auto;
 	margin-top: 50px;
   padding: 25px;
@@ -122,7 +122,7 @@ body {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
-	padding-top: 50px;
+	padding-top: 25px;
 }
 
 .examples img {
@@ -134,6 +134,93 @@ body {
 	opacity: 0.7;
 }
 
+#formflex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	min-height: 650px;
+	width: 50%;
+	margin: 75px auto;
+	border: 5px solid white;
+	padding: 25px;
+	border-radius: 15px;
+	background-color: black;
+}
+
+
+#form h1 {
+	color: #005c99;
+	margin-bottom: 1em;
+	line-height: 1em;
+	font-family: Raleway;
+}
+
+#form label {
+	font-weight: bold;
+	color: white;
+	margin-right: 25px;
+	font-family: Raleway;
+}
+
+#form div {
+	float: right;
+	clear: both;
+	margin-top: 25px;
+}
+
+#form #first, #last, #email, #comment {
+	border-radius: 5px;
+	height: 40px;
+	width: 350px;
+}
+
+#commentbox label {
+	margin-right: 0px;
+}
+
+#commentbox label textarea {
+	vertical-align: middle;
+	margin-left: 25px;
+}
+
+input {
+	padding-left: 10px;
+	font-family: Raleway;
+}
+
+textarea {
+	resize: none;
+	font-family: Raleway;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+#newsradio {
+	color: white;
+	font-family: Raleway;
+	margin-right: 50px;
+}
+
+#continuediv {
+	height: 50px;
+	margin-right: 175px;
+}
+
+#continue {
+	background: #005c99;
+	color: white;
+	font-weight: bold;
+	font-size: 110%;
+	border: none;
+	width: 175px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+#continue:hover {
+	opacity: 0.7;
+}
 
 .footer {
 	width: 80%;
