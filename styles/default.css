@@ -10,17 +10,21 @@ html {
 
 body {
 	background-color: #1a1a1a;
+	background-image: url(../images/code_background.png);
 	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .container {
-  width: 85%;
+  width: 80%;
   min-width: 1000px;
-	min-height: 720px;
-  margin: 25px auto;
+	min-height: 800px;
+  margin: 0px auto;
+	margin-top: 50px;
   padding: 25px;
   border-radius: 10px;
-  background-color: darkgray;
+  background-color: rgb(25, 25, 25, 0.9);
 	position: relative;
 }
 
@@ -48,16 +52,20 @@ body {
 	border-radius: 15px 30px 15px 30px;
 }
 
+#logoleft:hover, #logoright:hover {
+	opacity: 0.8;
+}
+
 .header {
-  width: 60%;
+  width: 50%;
   min-width: 480px;
   margin: auto;
   padding: 10px;
   border-radius: 15px;
   font-family: Raleway;
   text-align: center;
-  background-color: #B93333;
-	background: linear-gradient(to bottom right,#CD6812, #FEE3CC);
+  background-color: #d9edf7;
+	border: 2px solid #bce8f1;
   line-height: 1.5;
 	margin-bottom: 100px;
 }
@@ -95,6 +103,7 @@ body {
   width: 70%;
   min-width: 480px;
   margin: 25px auto;
+	color: white;
   font-family: Raleway;
   text-align: center;
 	float: left;
@@ -106,4 +115,65 @@ body {
 
 .desc p {
 	font-size: 1.2em;
+}
+
+.flex {
+	clear: both;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-evenly;
+	padding-top: 50px;
+}
+
+.examples img {
+	border: 5px solid white;
+	border-radius: 15px;
+}
+
+.examples img:hover {
+	opacity: 0.7;
+}
+
+
+.footer {
+	width: 80%;
+	margin: 25px auto;
+	height: 75px;
+	background-color: rgb(25, 25, 25, 0.9);
+	border-radius: 15px;
+}
+
+.footermenu ul li {
+	float: left;
+	line-height: 75px;
+	width: 25%;
+	list-style: none;
+	text-align: center;
+}
+
+.footermenu ul li:nth-child(1) {
+	border-right: 2px solid white;
+}
+
+.footermenu ul li:nth-child(2) {
+	border-right: 2px solid white;
+}
+
+.footermenu ul li:nth-child(3) {
+	border-right: 2px solid white;
+}
+
+.footermenu ul li a {
+	display: block;
+	text-decoration: none;
+	font-family: Raleway;
+	font-weight: bold;
+	font-size: 120%;
+	color: white;
+}
+
+.footermenu ul li a:hover {
+	line-height: 71px;
+	background-color: rgb(25, 25, 25, 0.3);
+	border: 2px solid white;
 }
