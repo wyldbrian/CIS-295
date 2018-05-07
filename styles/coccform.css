@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+	margin: 0; padding: 0; border: 0; box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway;
+}
+
+#container {
+  width: 80%;
+  min-height: 720px;
+  min-width: 720px;
+  margin: 50px auto;
+}
+
+#header {
+  width: 90%;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  min-height: 170px;
+  border-bottom: 3px solid black;
+}
+
+#header a, h1 {
+  display: block;
+}
+
+#disclosure {
+  width: 90%;
+  margin: 0px auto;
+  border-bottom: 3px solid black;
+}
+
+#disclosure p {
+  margin: 25px auto;
+}
+
+#formtitle {
+  width: 60%;
+  margin: 15px auto;
+}
+
+#req {
+  color: red;
+  font-size: 200%;
+  vertical-align: top;
+}
+
+#formdiv {
+  width: 90%;
+  margin: 15px auto;
+  border-bottom: 3px solid black;
+}
+
+#form  {
+  width: 35%;
+  min-width: 400px;
+  margin: 15px auto;
+}
+
+#form div {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 120%;
+  flex-grow: 1.1;
+}
+
+.required:after {
+  content: ' *';
+  color: red;
+  font-size: 175%;
+  vertical-align: top;
+}
+
+input[type=radio] {
+  margin-left:10px;
+}
+
+input[type=text], select {
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  padding-left: 10px;
+  height: 30px;
+  width: 250px;
+}
+
+textarea {
+  padding-left: 10px;
+  padding-top: 10px;
+  margin: 0px auto;
+  resize: none;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+}
+
+#finish, #checklist, #continue {
+	background: #005c99;
+	color: white;
+	font-weight: bold;
+	border: none;
+	width: 100px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+#continue {
+  background: green;
+}
+
+#continue:hover, #finish:hover, #checklist:hover {
+	opacity: 0.7;
+}
+
+.alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px auto;
+    background-color: #f44336;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}

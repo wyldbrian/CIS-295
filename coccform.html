@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>COCC Form - Personal Information</title>
+
+	<meta name="author" content="Brian Spaulding">
+	<meta name="description" content="COCC Form - Personal Information">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="styles/coccform.css">
+</head>
+
+<body>
+
+<div id="container">
+  <div id="header">
+    <a href="#"><img src="images/cocc-logo.jpg" alt="COCC Logo"></a>
+    <h1>Personal Information Form</h1>
+  </div>
+  <div id="disclosure">
+    <p><strong>Social Security Number:</strong> Once your initial Application for Admission is processed, you will be assigned a COCC ID number. Use this number to register for classes and other college related business. Providing your social security number (SSN) is voluntary. If you provide it, the College will use your SSN for keeping records, research and reporting, extending credit, processing debts, and allowing students access to the COCC/OSU library systems. The College will not use your number to make any decision directly affecting you or any other person. Your SSN will not be given to the general public. If you choose not to provide your SSN you will not be denied any rights as a student. Please read the consent for information contained in the catalog, which describes how your number will be used. Providing your SSN means that you consent to use of the number in the manner described.
+    </p>
+    <p><strong>Non-Discrimination Policy:</strong> It is the policy of the Central Oregon Community College Board of Directors that there will be no discrimination or harassment on the basis of age, disability, gender, marital status, national origin, color, race, religion, sexual orientation or veteran status in any educational programs, activities or employment. Persons having questions about equal opportunity and nondiscrimination should contact the Equal Employment Officer, c/o COCC's Human Resources office, (541) 383-7216. Faculty, staff and students are protected from discrimination and harassment under Title VII of the Civil Rights Act of 1964 and Title IX of the Education Amendments of 1972. Persons who, because of a physical or learning disability, need special accommodation should contact ADA Coordinator Joe Viola, (541) 383-7776, in advance of their need for accommodation. Further inquiries may be directed to the Affirmative Action Officer, c/o COCC's Human Resources office, (541) 383-7216.
+    </p>
+  </div>
+  <h2 id="formtitle">Enter your personal information | <span id="req">*</span> = Required Field</h2>
+  <div id="formdiv">
+    <form id="form" method="post" action="#">
+      <div id="social">
+        <label for="ssn">SSN:</label>
+        <input placeholder="555-55-5555" type="text" name="ssn">
+      </div>
+      <div id="citizenship">
+        <label for="citizen">Citizenship:</label>
+        <select name="citizen">
+          <option value="none">None</option>
+          <option value="citizen">Citizen</option>
+          <option value="noncitizen">Non-Citizen</option>
+        </select>
+      </div>
+      <div id="dob">
+        <label class="required" for="dob">Birth Date:</label>
+        <input placeholder="__/__/____" type="text" name="dob" required>
+      </div>
+      <div id="email">
+        <label class="required" for="email">Email:</label>
+        <input placeholder="user@example.com" type="text" name="email" required>
+      </div>
+      <div id="emailverify">
+        <label class="required" for="emailverify">Verify Email:</label>
+        <input placeholder="user@example.com" type="text" name="emailverify" required>
+      </div>
+      <div id="phone">
+        <label for="phone">Phone Number:</label>
+        <input placeholder="555-555-5555" type="text" name="phone">
+      </div>
+      <div id="gender">
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="none">No Response
+      </div>
+      <div id="ethnicity">
+        <label for="ethnicity">Ethnicity:</label>
+        <input type="radio" name="ethnicity" value="hl">Hispanic or Latino
+        <input type="radio" name="ethnicity" value="nhl">Non Hispanic or Latino
+      </div>
+      <div id="race">
+        <label for="race">Race:</label>
+        <select name="race">
+          <option value="american">American Indian</option>
+          <option value="alaskan">Alaska Native</option>
+          <option value="asian">Asian</option>
+          <option value="african">African American</option>
+          <option value="hawaiian">Native Hawaiian</option>
+          <option value="pacificislander">Pacific Islander</option>
+          <option value="white">White</option>
+        </select>
+      </div>
+      <div id="infodivlabel">
+          <label for="additionalinfo">If you are a non-U.S. citizen please enter your visa type. If you are a non-U.S. citizen in the U.S. on any Visa please contact COCC for admissions information.</label>
+      </div>
+      <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        COCC is not authorized to admit international students and is unable to accept the following VISA types: F1, J1 and M1. Other students are encouraged to contact an immigration official to ensure that registration at COCC does not conflict with their immigration status.
+      </div>
+      <div id="infodivtext">
+        <textarea placeholder="Visa information" name="additionalinfo" style="width:100%;height:150px;"></textarea>
+      </div>
+      <div id="submitdiv">
+        <input id="finish" type="submit" value="Finish Later">
+        <input id="checklist" type="submit" value="Checklist">
+        <input id="continue" type="submit" value="Continue">
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+
+</html>
