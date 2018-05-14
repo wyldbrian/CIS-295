@@ -1,0 +1,148 @@
+* {
+	margin: 0; padding: 0; border: 0; box-sizing: border-box;
+}
+
+body {
+}
+
+header {
+  width: 1000px;
+  margin: 30px auto;
+  min-height: 200px;
+  font-family: verdana;
+  font-size: 90%;
+  position: relative;
+}
+
+header #logo {
+  float: left;
+  margin: 10px;
+}
+
+header nav {
+  float: left;
+}
+
+header form {
+}
+
+header nav ul {
+  list-style-type: none;
+
+}
+
+.parentMenuList > li {
+  float: left;
+  height: 50px;
+}
+
+.parentMenuList > li > a {
+  display: block;
+  padding: 15px 6px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+}
+
+.parentMenuList > li > a:hover {
+  color: #007;
+  text-decoration: underline;
+}
+
+.parentMenuList > li > a.promo {
+  font-weight: bold;
+  color: #900;
+}
+
+.subMenuContent {
+  width: 1000px; min-height: 300px;
+  background-color: #FFF;
+  position: absolute;
+  left: 0px; top: 50px;
+  display: none;
+  padding-top: 40px;
+}
+
+header nav li:hover .subMenuContent {
+  display: block;
+}
+
+.subMenuList {
+  border-left: 1px solid #000;
+  margin: 10px;
+  padding-left: 10px;
+  float: left;
+  min-height: 230px;
+}
+
+.subMenuList li {
+  margin: 5px 0px;
+}
+
+.subMenuList li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.subMenuList li:first-child a {
+  font-weight: bold;
+  color: #007;
+  text-transform: uppercase;
+}
+
+.subMenuList a:hover {
+  text-decoration: underline;
+}
+
+.subMenuPromo {
+  width: 220px; height: 220px;
+  float: left;
+  position: relative;
+  margin-top: 20px; margin-left: 20px;
+}
+
+.subMenuCall1 {
+  display: block; width: 100%; height: 100%;
+  background-image: url(../images/shoe.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+.subMenuCall2 {
+  display: block;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  background-color: #FFF;
+  border: 1px solid red;
+  position: absolute;
+  left: 50%; bottom: 12px;
+  transform: translate(-75px);
+}
+
+header form {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+header fieldset {
+  border: 1px solid gray;
+  margin: 5px;
+  padding: 10px;
+}
+
+input[type=text] {
+  width: 180px;
+  height: 30px;
+  font-size: 14pt; font-style: italic;
+}
+
+input[type=image] {
+  width: 20px;
+  height: 20px;
+  float: right;
+}
