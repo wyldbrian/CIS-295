@@ -19,7 +19,7 @@ body {
 
 .container {
   width: 80%;
-  min-width: 1100px;
+  min-width: 1200px;
 	min-height: 750px;
   margin: 0px auto;
 	margin-top: 50px;
@@ -74,13 +74,20 @@ body {
 }
 
 .flex1 {
+	width: 90%;
+	margin: auto;
 	display: flex;
 	flex-flow: wrap;
-	justify-content: space-between;
+	align-items: center;
+	justify-content: space-around;
+	border-bottom: 5px double white;
+	border-top: 5px double white;
+	padding-bottom: 25px;
+	padding-top: 25px;
 }
 
 .assignments {
-	width: 15%;
+	width: 25%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -113,9 +120,8 @@ body {
 }
 
 .desc {
-  width: 70%;
+  width: 50%;
   min-width: 480px;
-  margin: 25px auto;
 	color: white;
   font-family: Raleway;
   text-align: center;
@@ -129,8 +135,8 @@ body {
 	font-size: 1.2em;
 }
 
-.socialicons {
-	width: 15%;
+.socialdiv {
+	width: 25%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -141,8 +147,6 @@ body {
 	background-color: white;
 	border-radius: 10px;
 	background-color: white;
-	float: left;
-	margin-left: 50px;
 }
 
 .social img {
@@ -157,6 +161,8 @@ body {
 }
 
 .flex2 {
+	width: 90%;
+	margin: auto;
 	clear: both;
 	display: flex;
 	flex-flow: wrap;
