@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Honda Navigation Menu</title>
+	<meta name="author" content="Brian Spaulding">
+	<meta name="description" content="Honda Navigation Menu">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <style>
+
+  * {
+  	margin: 0; padding: 0; border: 0; box-sizing: border-box;
+  }
+
+  header {
+    background-color: white; height: 10vh;
+  }
+
+  main {
+    background-image: url(images/hondanav1.jpg);
+    background-size: 100% 100%;
+    height: 90vh;
+    font-family: verdana;
+  }
+
+  nav div {
+    margin-top: 25vh;
+  }
+
+  nav {
+    position: absolute; left: 0px; top: 10vh;
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    position: relative;
+    z-index: 20;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 30px 10px 85px;
+    transition: padding 100ms linear;
+    float: left; clear: left;
+  }
+
+  nav a:hover {
+    padding-left: 90px;
+    color: white;
+  }
+
+  nav a + span {
+    width: 100%; height: 90vh;
+    position: absolute; top: 0px; left: 0px;
+    z-index: 15;
+  }
+
+nav a + span img {
+  width: 100%; height: 100%;
+  opacity: 0;
+  transition: opacity 300ms linear;
+}
+
+nav a:hover + span img {
+  opacity: 1;
+}
+
+  </style>
+
+</head>
+
+<body>
+<header>
+   <a href="#" style="margin-left: 60px"><img style="height: 25px; margin: 25px"src="images/honda-logo.svg" alt="Honda Logo"></a>
+</header>
+
+<main>
+  <nav>
+    <div>
+      <a href="#">cars</a><span><img src="images/hondanav2.jpg" alt=""></span>
+      <a href="#">marine</a><span><img src="images/hondanav3.jpg" alt=""></span>
+      <a href="#">motorcycles</a><span><img src="images/hondanav4.jpg" alt=""></span>
+      <a href="#">power equipment</a><span><img src="images/hondanav5.jpg" alt=""></span>
+    </div>
+  </nav>
+
+</main>
+
+</body>
+
+</html>
