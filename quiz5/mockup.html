@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Quiz 5 | Mockup 1</title>
+  <meta name="author" content="Brian Spaulding">
+	<meta name="description" content="Quiz 5 | Mockup 1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+
+  * {
+  	margin: 0; padding: 0; border: 0; box-sizing: border-box;
+  }
+
+  #container {
+    width: 95%;
+    max-width: 1024px;
+    margin: 10px auto;
+  }
+
+  #container > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  #container div > div {
+    border: 2px solid white;
+  }
+
+  #wrap1 > div {
+    background-color: orange;
+    min-height: 15vh;
+    width: 50%;
+  }
+
+  #wrap2 > div {
+    background-color: yellow;
+    min-height: 70vh;
+    width: 100%;
+  }
+
+  #wrap3 > div {
+    background-color: blue;
+    min-height: 50vh;
+    width: calc(100%/3);;
+  }
+
+  #wrap4 > div {
+    background-color: lightgray;
+    min-height: 25vh;
+    width: 25%;
+  }
+
+  /* Styles for max-width of 768px */
+
+  @media screen and (max-width: 768px) {
+
+    #wrap1 > div {
+      min-height: 10vh;
+      width: 100%;
+    }
+
+    #wrap2 div {
+      min-height: 50vh;
+    }
+
+    #wrap3 div {
+      min-height: 15vh;
+      width: 100%;
+    }
+
+    #wrap4 div {
+      min-height: 20vh;
+      width: 50%;
+    }
+  }
+
+  /* Styles for max-width of 320px */
+
+  @media screen and (max-width: 320px) {
+
+    #wrap1 > div {
+      min-height: 10vh;
+      width: 100%;
+    }
+
+    #wrap2 div {
+      min-height: 15vh;
+    }
+
+    #wrap3 div {
+      min-height: 25vh;
+      width: 100%;
+    }
+
+    #wrap4 div {
+      min-height: 10vh;
+      width: 100%;
+    }
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="wrap1">
+      <div></div>
+      <div></div>
+    </div>
+    <div id="wrap2">
+      <div></div>
+    </div>
+    <div id="wrap3">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="wrap4">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</body>
+
+</html>
