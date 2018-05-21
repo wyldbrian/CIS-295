@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Starbucks Mockup</title>
+  <meta name="author" content="Brian Spaulding">
+	<meta name="description" content="Starbucks Mockup">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <style>
+
+    * {
+      margin: 0; padding: 0; border: 0; box-sizing: border-box;
+    }
+
+    body {
+      background-color: lightgray;
+      color: white;
+    }
+
+    .container {
+      width: 95%;
+      max-width: 1200px;
+      margin: 10px auto;
+    }
+
+    .container > div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    .wrap1 > div {
+      background-color: red;
+      min-height: 3vh;
+      width: 30%;
+    }
+
+    .wrap1 ul {
+      margin-left: auto;
+      padding-right: 5%;
+    }
+
+    .wrap1 li {
+      list-style: none;
+      float: left;
+      padding-left: 10px;
+    }
+
+    .wrap2 nav {
+      width: 80%;
+      min-height: 3vh;
+      background-color: #737373;
+    }
+
+    .wrap3-div1 {
+      width: 70%;
+      min-height: 40vh;
+      background-color: #737373;
+      margin-top: 15px;
+    }
+
+    .wrap3-div2 {
+      width: 30%;
+      min-height: 40vh;
+    }
+
+    .wrap3-div2 > div {
+      width: 70%;
+      min-height: 10vh;
+      margin-left: auto;
+    }
+
+    .wrap3-div2-div1 {background-color: green; margin-bottom: 5vh;}
+    .wrap3-div2-div2 {background-color: purple; margin-bottom: 5vh;}
+    .wrap3-div2-div3 {background-color: blue;}
+
+    .wrap4-div1 {
+      width: 35%;
+      min-height: 60vh;
+      background-color: red;
+    }
+
+    .wrap4-div2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      width: 65%;
+      min-height: 60vh;
+    }
+
+    .wrap4-div2 > div {
+      min-height: 18vh;
+      width: 40%;
+      margin-left: 5%;
+    }
+
+    .wrap4-div2-div1 {background-color: yellow; margin-bottom: 3vh;}
+    .wrap4-div2-div2 {background-color: orange; margin-bottom: 3vh;}
+    .wrap4-div2-div3 {background-color: blue; margin-bottom: 3vh;}
+    .wrap4-div2-div4 {background-color: green; margin-bottom: 3vh;}
+    .wrap4-div2-div5 {background-color: tan;}
+    .wrap4-div2-div6 {background-color: pink;}
+
+    .wrap5-div1 {
+      background-color: black;
+      min-height: 20vh;
+      width: 100%;
+    }
+
+    /* Styles for max-width of 370px */
+
+    @media screen and (max-width: 370px) {
+
+      .container {position: relative;}
+
+      .logo img {height: 50px;}
+      .wrap1 > div {display: none;}
+      .wrap1 li:nth-child(2) {display: none;}
+      .wrap2 {position: absolute; top: 0px; width: 100%;}
+      .wrap2 nav {width: 10%; margin-top: auto;}
+      .wrap3-div1 {width: 100%;}
+      .wrap3-div2 {width: 100%; display: flex; min-height: 10vh;}
+      .wrap3-div2 > div {width: 22%; max-height: 8vh; margin: 10px auto;}
+      .wrap4-div1 {order: 2; width: 100%; min-height: 40vh;}
+      .wrap4-div2 {width: 100%; min-height: 40vh; margin-bottom: 20px;}
+      .wrap4-div2 > div {width: 40%; min-height: 15%; margin: 15px auto;}
+      .wrap5-div1 {min-height: 15vh;}
+
+      .wrap3-div2-div1 {background-color: green; margin-bottom: 5vh;}
+      .wrap3-div2-div2 {background-color: blue; margin-bottom: 5vh;}
+      .wrap3-div2-div3 {background-color: purple;}
+
+      .wrap4-div2-div1 {background-color: orange; margin-bottom: 3vh;}
+      .wrap4-div2-div2 {background-color: yellow; margin-bottom: 3vh;}
+      .wrap4-div2-div3 {background-color: green; margin-bottom: 3vh;}
+      .wrap4-div2-div4 {background-color: blue; margin-bottom: 3vh;}
+      .wrap4-div2-div5 {background-color: pink;}
+      .wrap4-div2-div6 {background-color: tan;}
+
+
+
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="wrap1">
+    <ul>
+      <li><a href="#">sign in</a></li>
+      <li><a href="#">customer service</a></li>
+      <li><a href="#">find a store</a></li>
+    </ul>
+    <div></div>
+  </div>
+
+  <div class="wrap2">
+    <a class="logo" href="#"><img src="images/starbucks.jpg" alt="Starbucks Logo"></a>
+    <nav>nav</nav>
+  </div>
+
+  <div class="wrap3">
+    <div class="wrap3-div1"></div>
+    <div class="wrap3-div2">
+      <div class="wrap3-div2-div1"></div>
+      <div class="wrap3-div2-div2"></div>
+      <div class="wrap3-div2-div3"></div>
+    </div>
+  </div>
+
+  <div class="wrap4">
+    <div class="wrap4-div1"></div>
+    <div class="wrap4-div2">
+      <div class="wrap4-div2-div1"></div>
+      <div class="wrap4-div2-div2"></div>
+      <div class="wrap4-div2-div3"></div>
+      <div class="wrap4-div2-div4"></div>
+      <div class="wrap4-div2-div5"></div>
+      <div class="wrap4-div2-div6"></div>
+    </div>
+  </div>
+
+  <div class="wrap5">
+    <div class="wrap5-div1"></div>
+  </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+
+</html>
