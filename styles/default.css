@@ -6,7 +6,6 @@
 
 html {
 	min-height: 100%;
-	min-width: 1300px;
 }
 
 body {
@@ -19,8 +18,6 @@ body {
 
 .container {
   width: 80%;
-  min-width: 1200px;
-	min-height: 750px;
   margin: 0px auto;
 	margin-top: 50px;
   padding: 25px;
@@ -33,24 +30,24 @@ body {
 
 #logoleft {
 	position: absolute;
-	left: 25px;
-	top: 25px;
+	left: 4%;
+	top: 2%;
 }
 
 #logoleft img {
-	height: 175px;
+	width: 125px;
 	border: 4px double black;
 	border-radius: 30px 15px 30px 15px;
 }
 
 #logoright {
 	position: absolute;
-	right: 25px;
-	top: 25px;
+	right: 4%;
+	top: 2%;
 }
 
 #logoright img {
-	height: 175px;
+	width: 125px;
 	border: 4px double black;
 	border-radius: 15px 30px 15px 30px;
 }
@@ -61,7 +58,6 @@ body {
 
 .header {
   width: 50%;
-  min-width: 480px;
   margin: auto;
   padding: 10px;
   border-radius: 15px;
@@ -70,14 +66,14 @@ body {
   background-color: #d9edf7;
 	border: 2px solid #bce8f1;
   line-height: 1.5;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 .flex1 {
 	width: 90%;
 	margin: auto;
 	display: flex;
-	flex-flow: wrap;
+	flex-flow: nowrap;
 	align-items: center;
 	justify-content: space-around;
 	border-bottom: 5px double white;
@@ -88,19 +84,28 @@ body {
 
 .assignments {
 	width: 25%;
+	min-width: 200px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
+.assignments ul {
+	width: 100%;
+	min-width: 200px;
+}
+
 .assignments li {
 	list-style-type: none;
+	width: 80%;
+	min-width: 200px;
+	margin: 0px auto;
 }
 
 .assignments a {
   display: block;
   margin: 10px auto;
-  width: 225px;
+  min-width: 90%;
   height:  30px;
   line-height: 26px;
   border: 2px solid white;
@@ -121,7 +126,6 @@ body {
 
 .desc {
   width: 50%;
-  min-width: 480px;
 	color: white;
   font-family: Raleway;
   text-align: center;
@@ -167,7 +171,7 @@ body {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
-	padding-top: 25px;
+	margin-top: 50px;
 }
 
 #webforms {
@@ -188,6 +192,9 @@ body {
 .examples img {
 	border: 5px solid white;
 	border-radius: 15px;
+	height: 175px;
+	margin-bottom: 25px;
+	margin: 0px 10px 25px 10px;
 }
 
 .examples img:hover {
@@ -326,4 +333,37 @@ textarea {
 	line-height: 69px;
 	background-color: rgb(25, 25, 25, 0.3);
 	border: 3px solid lightblue;
+}
+
+/* Rules for when the page shrinks to 800px */
+
+@media screen and (max-width: 950px) {
+
+	.container {width: 90%;}
+	.footer {width: 90%;}
+	.desc {display: none;}
+	.footermenu ul li a {font-size: 90%;}
+
+}
+
+@media screen and (max-width: 640px) {
+
+	.container {width: 95%;}
+	.header {width: 90%; font-size: 80%}
+	#logoleft, #logoright {display: none;}
+	.footer {width: 95%;}
+	.desc {display: none;}
+	.footermenu ul li a {font-size: 70%;}
+
+}
+
+@media screen and (max-width: 450px) {
+
+	.header {width: 95%; font-size: 70%;}
+	.assignments li {min-width: 90px;}
+	.assignments a {font-size: 70%;}
+	.socialdiv {margin-right: 10px;}
+	.social img {margin: 5px;}
+	.examples img {height: 125px;}
+
 }
