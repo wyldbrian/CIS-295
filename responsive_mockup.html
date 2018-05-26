@@ -8,20 +8,38 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style>
 
+	@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+	* {
+		margin: 0; padding: 0; border: 0; box-sizing: border-box;
+	}
+
+
   .container {
     width: 100%;
   }
 
   .wrap1 {
     height: 250px;
-    background-color: blue;
+    background-color: #005ce6;
+		border: 5px solid white;
   }
+
+	.wrap1 h1 {
+		color: white;
+		font-weight: bold;
+		font-family: Raleway;
+		text-align: center;
+		line-height: 250px;
+		font-size: 4em;
+	}
 
   .wrap2 {
     height: 750px;
     width: 25%;
-    background-color: red;
+    background-color: #ff1a1a;
     float: left;
+		border: 5px solid white;
   }
 
   .wrap3 {
@@ -34,12 +52,14 @@
 
   .wrap3-div1 {
     width: 65%;
-    background-color: green;
+    background-color: #009933;
+		border: 5px solid white;
   }
 
   .wrap3-div2 {
     width: 35%;
-    background-color: purple;
+    background-color: #9933ff;
+		border: 5px solid white;
   }
 
   @media screen and (max-width: 950px)  {
@@ -47,18 +67,26 @@
   .wrap3-div1 {
     width: 100%;
     height: 250px;
-    background-color: purple;
+    background-color: #9933ff;
   }
 
   .wrap3-div2 {
     width: 100%;
     height: 500px;
-    background-color: green;
+    background-color: #009933;
   }
 
   }
 
   @media screen and (max-width: 640px)  {
+
+		.wrap1 {
+			height: 200px;
+		}
+
+		.wrap1 h1 {
+			line-height: 200px;
+		}
 
     .wrap2 {
       width: 100%;
@@ -68,6 +96,14 @@
     .wrap3-div1 {
       display: none;
     }
+
+		.wrap3 {
+			width: 100%;
+		}
+
+		.wrap3-div2 {
+			width: 100%;
+		}
 
 
   }
@@ -79,10 +115,9 @@
 
   <div class="container">
     <div class="wrap1">
-      <div class="wrap1-div1"></div>
+			<h1>Brian Spaulding</h1>
     </div>
     <div class="wrap2">
-      <div class="wrap2-div1"></div>
     </div>
     <div class="wrap3">
       <div class="wrap3-div1"></div>
