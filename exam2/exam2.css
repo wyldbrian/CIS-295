@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0px auto;
   margin-top: 10px;
 }
@@ -210,12 +210,13 @@ body {
   font-size: 110%;
 }
 
-  @media screen and (max-width: 850px)  {
+  @media screen and (max-width: 900px)  {
 
     .logo {max-width: 30%;}
     .left {width: 30%; order: 1;}
     .middle {width: 70%; height: 60vh; order: 3;}
     .left span {display: none;}
+    .left a {font-size: 85%;}
     .right {width: 70%; min-height: 15vh; background-position: 50% 75%; order: 2;}
     .right p {color: black; font-size: 150%;}
 
@@ -264,7 +265,7 @@ body {
 
   }
 
-  @media screen and (max-width: 640px)  {
+  @media screen and (max-width: 600px)  {
 
     .headnav, .search, .buttons {
       display: none;
