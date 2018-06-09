@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+	margin: 0; padding: 0; border: 0; box-sizing: border-box;
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	background: linear-gradient(to top left,#3b5998, darkgray) fixed;
+	background-repeat: no-repeat;
+  padding-bottom: 25px;
+  padding-top: 25px;
+	min-width: 720px;
+}
+
+/* styling for the container */
+
+.container {
+  width: 80%;
+	min-width: 640px;
+  margin: auto;
+  border-radius: 25px;
+  padding-bottom: 50px;
+  padding-top: 25px;
+  background: linear-gradient(to bottom right,#3b5998, black);
+}
+
+/* styling for our flex boxes */
+
+.flex1 {
+	margin: auto;
+	width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex2 {
+	margin: auto;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex3 {
+	margin: auto;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+/* styling for the header */
+
+.header {
+	background-color: white;
+	height: 100px;
+	width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+	text-align: center;
+}
+
+/* styling for the menu */
+
+.menu {
+  background-color: #3b5998;
+  width: 100%;
+  height: 50px;
+}
+
+.menu ul {
+  width: 100%;
+  margin: auto;
+  list-style-type: none;
+}
+
+.menu li {
+  width: 25%;
+  float: left;
+}
+
+.default {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: verdana;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 120%;
+}
+
+.default:hover {
+  background-color: white;
+  color: black;
+}
+
+.default:active {
+  background-color: white;
+  color: black;
+  opacity: 0.7;
+}
+
+.selected {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-family: verdana;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 120%;
+}
+
+.selected:hover {
+  background-color: black;
+  color: white;
+	opacity: 0.5;
+}
+
+.selected:active {
+  background-color: black;
+  color: white;
+  opacity: 0.3;
+}
+
+.menu li:nth-child(odd) {
+  border-right: 1px solid white;
+}
+
+.menu li:nth-child(2) {
+  border-right: 1px solid white;
+}
+
+
+/* default styling for all paragraphs */
+
+p {
+  color: white;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 110%;
+  text-align: center;
+	margin: 50px auto;
+}
+
+/* styling for the images */
+
+.images {
+  display: block;
+}
+
+.images:hover {
+  opacity: 0.5;
+}
+
+.images:nth-child(1) img {
+  border: 4px solid white;
+  border-radius: 50px 25px 50px 25px;
+}
+
+.images:nth-child(2) {
+  margin: 15px;
+}
+
+.images:nth-child(2) img {
+  border: 4px solid white;
+  border-radius: 25px;
+}
+
+.images:nth-child(3) img {
+  border: 4px solid white;
+  border-radius: 25px 50px 25px 50px;
+}
+
+/* style the resource table */
+
+/* Since IE sucks, I had create an extra container for my table... */
+
+.explorerbug {
+	width: 100%;
+	text-align: center;
+}
+
+.resource_table {
+	border: 2px solid white;
+	width: 100%; margin: auto;
+	border-collapse: collapse;
+	font-family: Raleway;
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+
+.resource_table tr {
+	height: 25px;
+}
+
+.resource_table th {
+	background-color: #1a1a1a;
+	color: white;
+	border: 2px solid white;
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.resource_table td {
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+	text-align: center
+}
+
+.resource_table a {
+	text-decoration: none;
+	color: lightblue;
+	font-weight: bold;
+}
+
+.resource_table tr:nth-last-child(even) td {
+	background-color: #1a1a1a;
+}
+
+/* styling for the admins on the contact page */
+
+.admins {
+	width: 30%;
+	min-width: 350px;
+	min-height: 350px;
+	margin: 15px;
+	border: 4px solid white;
+	border-radius: 30px 10px 25px 10px;
+	background: linear-gradient(to top left,#8B8D8D, black);
+	font-family: Raleway;
+}
+
+.admins img {
+	margin-left: 5%;
+	margin-top: 5%;
+	border-radius: 50%;
+	float: left;
+}
+
+.admins h1 {
+	margin-left: 20%;
+	margin-top: 5%;
+	text-align: center;
+	height: 120px;
+	line-height: 120px;
+	color: white;
+	font-weight: bold;
+	float: left;
+}
+
+.admins p {
+	padding-top: 25px;
+	margin: auto;
+	width: 90%;
+	min-height: 150px;
+	clear: left;
+}
+
+.admins a {
+	display: block;
+	text-decoration: none;
+	font-size: 110%;
+	text-align: center;
+	font-weight: bold;
+	min-height: 50px;
+	line-height: 50px;
+}
+
+/* style the projects scrollbox */
+
+.scrollbox {
+	width: 90%;
+	min-width: 500px;
+	height: 500px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border: 4px solid white;
+	box-shadow: inset 0 0 15px #000000;
+	-webkit-box-shadow: inset 0 0 15px #000000;
+	-moz-box-shadow: inset 0 0 15px #000000;
+}
+
+.scrollbox::-webkit-scrollbar {
+    width: 20px;
+}
+
+.scrollbox::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px grey;
+}
+
+.scrollbox::-webkit-scrollbar-thumb {
+    background: #ccddff;
+		border-radius: 10px;
+}
+
+/* styling for the projects inside the scrollbox */
+
+.projects {
+	min-height: 300px;
+	width: 90%;
+	margin: 25px auto;
+	border: 2px solid white; border-radius: 10px;
+	font-family: Raleway;
+	text-align: center;
+	color: white;
+	background: linear-gradient(to top left,#8B8D8D, black);
+}
+
+.projects h1, h2 {
+	padding-top: 15px;
+}
+
+.projects p {
+	width: 80%;
+	text-align: center;
+	margin: 25px auto;
+}
+
+.projects img {
+	display: block;
+	max-width: 50%;
+	margin: 15px;
+	border-radius: 5px;
+}
+
+.imgflex {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+/* styling for the footer */
+
+.footer {
+	width: 100%;
+  height: 50px;
+	margin-top: 25px;
+  background-color: black;
+}
+
+.footer h2 {
+  text-align: center;
+  color: white;
+}
+
+/* style our member list */
+
+.members {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+.members ul {
+  width: 60%;
+  margin: auto;
+  list-style-type: none;
+}
+
+.members li {
+  width: 50%;
+  float: left;
+}
+
+.members a {
+  display: block;
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-family: verdana;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 120%;
+}
+
+.members a:hover {
+  background-color: black;
+  color: white;
+}
+
+.members a:active {
+  background-color: white;
+  color: black;
+  opacity: 0.8;
+}
+
+.members li:nth-child(odd) {
+  border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.members li:nth-child(even) {
+  border-right: 1px solid black;
+}
+
+.members li:nth-child(5) {
+  border-bottom-right-radius: 25px;
+}
+
+/* style the copyright */
+
+.copyright {
+	color: white;
+	width: 80%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 90%;
+	font-family: verdana;
+	margin: auto;
+	text-align: center;
+	clear: left;
+}
