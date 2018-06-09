@@ -181,6 +181,7 @@ body {
 	flex-flow: wrap;
 	justify-content: space-evenly;
 	align-items: center;
+	text-align: center;
 }
 
 #webforms h2 {
