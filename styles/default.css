@@ -329,7 +329,7 @@ textarea {
 	font-weight: bold;
 	font-size: 120%;
 	color: white;
-	transition: border 100ms linear;
+	transition: border 200ms linear;
 }
 
 .footermenu ul li a:hover {
