@@ -24,6 +24,7 @@ body {
   padding: 25px;
   border-radius: 10px;
   background-color: rgb(25, 25, 25, 0.9);
+	background-color: rgba(25, 25, 25, 0.9);
 	position: relative;
 	border: 5px solid white;
 	box-shadow: 1px 2px 4px #888888;
@@ -296,6 +297,7 @@ textarea {
 	margin: 25px auto;
 	height: 75px;
 	background-color: rgb(25, 25, 25, 0.9);
+	background-color: rgba(25, 25, 25, 0.9);
 	border-radius: 15px;
 	border: 5px solid white;
 	box-sizing: content-box;
