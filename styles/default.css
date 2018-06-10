@@ -18,6 +18,7 @@ body {
 
 .container {
   width: 80%;
+	min-height: 250px;
   margin: 0px auto;
 	margin-top: 50px;
   padding: 25px;
@@ -334,6 +335,78 @@ textarea {
 	line-height: 69px;
 	background-color: rgb(25, 25, 25, 0.3);
 	border: 3px solid lightblue;
+}
+
+/* Build out resume div */
+
+#resumeinfo {
+	text-align: center;
+	margin: 25px;
+}
+
+.resume {
+	width: 70%;
+	margin: 50px auto;
+	color: white;
+	border: 1px solid white;
+	border-radius: 15px;
+}
+
+.resume h1,h2 {
+	text-align: center;
+	margin: 25px;
+}
+
+.resume h2 {
+	padding-bottom: 8px;
+	border-bottom: 5px double white;
+	width: 90%;
+	margin: 25px auto;
+}
+
+.resume h3 {
+	margin-left: 15%;
+	margin-top: 15px;
+}
+
+.resume h4 {
+	margin-left: 10%;
+	margin-top: 25px;
+}
+
+.resume ul {
+	margin-left: 20%;
+	margin-top: 10px;
+}
+
+.resume p {
+	margin-left: 15%;
+	margin-right: 10%;
+}
+
+#references {
+	margin-top: 50px;
+	font-size: 150%;
+}
+
+#downloadbutton a {
+	position: absolute;
+	top: 13%;
+	left: 4%;
+	display: block;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	background-color: #005c99;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+#downloadbutton a:hover {
+	opacity: 0.7;
 }
 
 /* Rules for when the page shrinks to 800px */
