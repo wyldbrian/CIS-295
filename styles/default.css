@@ -329,12 +329,14 @@ textarea {
 	font-weight: bold;
 	font-size: 120%;
 	color: white;
+	transition: border 100ms linear;
 }
 
 .footermenu ul li a:hover {
-	line-height: 69px;
-	background-color: rgb(25, 25, 25, 0.3);
-	border: 3px solid lightblue;
+	line-height: 65px;
+	background-color: black;
+	border: 5px double lightblue;
+	border-radius: 2px;
 }
 
 /* Build out resume div */
