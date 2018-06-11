@@ -209,7 +209,33 @@ p {
   border-radius: 25px 50px 25px 50px;
 }
 
-/* style the resource table */
+/* style the menu images */
+
+#foodmenu {
+	width: 50%;
+	text-align: center;
+	color: white;
+	border: 5px solid white;
+	border-radius: 15px;
+	padding: 2%;
+	background-color: black;
+}
+
+#foodmenu h2 {
+	margin-bottom: 25px;
+	padding-bottom: 10px;
+	color: #c68c53;
+	border-bottom: 5px double white;
+}
+
+#foodmenu h4 {
+	font-size: 120%;
+}
+
+#foodmenu p {
+	font-size: 100%;
+	font-weight: normal;
+}
 
 /* Since IE sucks, I had create an extra container for my table... */
 
