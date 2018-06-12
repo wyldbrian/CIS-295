@@ -307,7 +307,7 @@ textarea {
 .footermenu ul li {
 	float: left;
 	line-height: 75px;
-	width: 25%;
+	width: calc(100%/3);
 	list-style: none;
 	text-align: center;
 }
