@@ -13,14 +13,12 @@ body {
 	background-repeat: no-repeat;
   padding-bottom: 25px;
   padding-top: 25px;
-	min-width: 720px;
 }
 
 /* styling for the container */
 
 .container {
   width: 80%;
-	min-width: 640px;
   margin: auto;
   border-radius: 15px;
   padding-bottom: 50px;
@@ -66,6 +64,11 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 	text-align: center;
+}
+
+.header img {
+	width: 75%;
+	max-width: 495px;
 }
 
 /* styling for the menu */
@@ -181,6 +184,8 @@ p {
 
 .images img {
 	border: 4px solid white;
+	width: 100%;
+	max-width: 299px;
 }
 
 .images:hover {
@@ -201,8 +206,7 @@ p {
 
 #lunch,#breakfast {
 	width: 40%;
-	min-width: 300px;
-	min-height: 1075px;
+	min-height: 1100px;
 	text-align: center;
 	color: white;
 	border: 5px solid white;
@@ -233,6 +237,25 @@ p {
 #lunch img, #breakfast img {
 	border: 5px solid white;
 	border-radius: 10px;
+	width: 90%;
+	max-width: 224px;
+}
+
+/* style the sign image on the about page */
+
+#sign {
+	border: 5px solid white;
+	border-radius: 15px;
+	width: 90%;
+	max-width: 433px;
+}
+
+#map {
+	display: block;
+	border: 5px solid white;
+	border-radius: 15px;
+	width: 90%;
+	margin: 0px auto;
 }
 
 /* Since IE sucks, I had create an extra container for my table... */
@@ -285,7 +308,6 @@ p {
 
 .admins {
 	width: 30%;
-	min-width: 350px;
 	min-height: 350px;
 	margin: 15px;
 	border: 4px solid white;
@@ -328,33 +350,6 @@ p {
 	font-weight: bold;
 	min-height: 50px;
 	line-height: 50px;
-}
-
-/* style the projects scrollbox */
-
-.scrollbox {
-	width: 90%;
-	min-width: 500px;
-	height: 500px;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	border: 4px solid white;
-	box-shadow: inset 0 0 15px #000000;
-	-webkit-box-shadow: inset 0 0 15px #000000;
-	-moz-box-shadow: inset 0 0 15px #000000;
-}
-
-.scrollbox::-webkit-scrollbar {
-    width: 20px;
-}
-
-.scrollbox::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 10px grey;
-}
-
-.scrollbox::-webkit-scrollbar-thumb {
-    background: #ccddff;
-		border-radius: 10px;
 }
 
 /* styling for the projects inside the scrollbox */
@@ -410,7 +405,7 @@ p {
 
 /* style our member list */
 
-.members {
+.information {
   background-color: white;
   width: 100%;
   height: 50px;
@@ -418,18 +413,18 @@ p {
 	border-bottom-right-radius: 25px;
 }
 
-.members ul {
+.information ul {
   width: 60%;
   margin: auto;
   list-style-type: none;
 }
 
-.members li {
+.information li {
   width: 50%;
   float: left;
 }
 
-.members a {
+.information a {
   display: block;
   width: 100%;
   background-color: white;
@@ -442,27 +437,27 @@ p {
   font-size: 120%;
 }
 
-.members a:hover {
+.information a:hover {
   background-color: black;
   color: white;
 }
 
-.members a:active {
+.information a:active {
   background-color: white;
   color: black;
   opacity: 0.8;
 }
 
-.members li:nth-child(odd) {
+.information li:nth-child(odd) {
   border-right: 1px solid black;
 	border-left: 1px solid black;
 }
 
-.members li:nth-child(even) {
+.information li:nth-child(even) {
   border-right: 1px solid black;
 }
 
-.members li:nth-child(5) {
+.information li:nth-child(5) {
   border-bottom-right-radius: 25px;
 }
 
@@ -478,4 +473,128 @@ p {
 	margin: auto;
 	text-align: center;
 	clear: left;
+}
+
+/* style the contact form */
+
+#formflex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	min-height: 650px;
+	width: 50%;
+	margin: 50px auto;
+	border: 5px solid white;
+	padding: 15px;
+	border-radius: 15px;
+	background-color: black;
+}
+
+
+#form h1 {
+	color: #c68c53;
+	margin-bottom: 1em;
+	line-height: 1em;
+	font-family: cursive;
+	text-align: center;
+}
+
+#form label {
+	font-weight: bold;
+	color: white;
+	margin-right: 25px;
+	font-family: Raleway;
+}
+
+#form div {
+	float: right;
+	clear: both;
+	margin-top: 25px;
+}
+
+#first, #last, #email, #comment {
+	border-radius: 5px;
+	height: 40px;
+	width: 300px;
+}
+
+#commentbox label {
+	margin-right: 0px;
+}
+
+#commentbox label textarea {
+	vertical-align: middle;
+	margin-left: 25px;
+}
+
+input {
+	padding-left: 10px;
+	font-family: Raleway;
+}
+
+textarea {
+	resize: none;
+	font-family: Raleway;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+#newsradio {
+	color: white;
+	font-family: Raleway;
+	margin-right: 50px;
+}
+
+#continuediv {
+	height: 50px;
+	margin-right: 175px;
+}
+
+#continue {
+	background: #c68c53;
+	color: white;
+	font-weight: bold;
+	font-size: 110%;
+	border: none;
+	width: 175px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+#continue:hover {
+	opacity: 0.7;
+}
+
+@media screen and (max-width: 1300px) {
+	#formflex {width: 600px;}
+}
+
+@media screen and (max-width: 850px) {
+	.header {padding-top: 10px;}
+	#lunch,#breakfast {width: 80%; min-height: 0px;}
+	.container {width: 90%;}
+	#form div {float: none;}
+	#form {font-size: 80%;}
+	#first, #last, #email, #comment {width: 225px;}
+}
+
+@media screen and (max-width: 640px) {
+	.header {height: 75px;}
+	body {font-size: 80%;}
+}
+
+@media screen and (max-width: 450px) {
+	.header {height: 60px; padding-top: 15px;}
+	#lunch,#breakfast {width: 90%; min-height: 0px;}
+	body {font-size: 50%;}
+	#formflex {display: none;}
+}
+
+.desserts, .pastries {
+	border: 5px solid white;
+	border-radius: 15px;
+  width: 100%;
+	max-width: 480px;
+	margin: 1%;
 }

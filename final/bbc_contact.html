@@ -18,31 +18,53 @@
       </div>
       <nav class="menu">
         <ul>
-          <li><a class="selected" href="bbc.html">Home</a></li>
+          <li><a class="default" href="bbc.html">Home</a></li>
           <li><a class="default" href="bbc_menus.html">Menus</a></li>
           <li><a class="default" href="bbc_desserts.html">Desserts</a></li>
           <li><a class="default" href="bbc_pastries.html">Pastries</a></li>
       </ul>
       </nav>
-      <p>
-        Bandon Baking Company serves wholsesome, old-fashioned, made-from-scratch desserts and pastries. After settling in Bandon 14 years ago, we continue to serve our local community with tasy baked goods. Whether you're craving some warm chocolate chip cookies or just needing a few extra loaves of bread, Bandon Baking Company can take care of your need!
-        <br><br>
-        In addition to your baked goods, we offer breakfast and lunch, complimented by our pastries and bread. If you're in town for a visit or just going about your normal day in Bandon, swing by and check us out or call us at 555-555-5555!
-      </p>
-      <a class="calltoaction" href="bbc_contact.html">Come Visit Us!</a>
     </div>
     <div class="flex2">
-      <a class="images" href="bbc_desserts.html"><img src="cookie.jpg" alt="Chocolate Chip Cookie"></a>
-      <a class="images" href="bbc_pastries.html"><img src="bread.jpg" alt="Hot Bread Out of the Oven"></a>
-      <a class="images" href="bbc_desserts.html"><img src="cupcakes.jpg" alt="Carrot Cake Cupcake"></a>
-      <a class="images" href="bbc_pastries.html"><img src="cranberry_bread.jpg" alt="Fresh Cranberry Bread"></a>
-      <a class="images" href="bbc_desserts.html"><img src="cinnamon_roll.jpg" alt="Cinnamon Roll"></a>
-    </div>
+			<div id="contactdetails">
+				<p>Open Tuesday-Saturday 8:00 a.m. - 4:00 p.m.</p>
+				<p>Closed through January and Major Holidays</p>
+				<p>
+				Bandon Baking Company<br>
+				160 SW 2nd St.<br>
+				Bandon, OR 97741<br>
+				</p>
+				<img id="map" src="map.jpg" alt="Bandon Baking Company Map">
+			</div>
+			<div id="formflex">
+		    <form id="form" method="post" action="#">
+		    	<h1>Send A Message</h1>
+		   		<div id="firstname">
+		    		<label for="first">First Name</label>
+		    		<input placeholder="Your first name" type="text" id="first" required>
+		   		</div>
+		 			<div id="lastname">
+		     		<label for="last">Last Name</label>
+		   			<input placeholder="Your last name" type="text" id="last" required>
+		    	</div>
+		  		<div id="emailaddr">
+		    		<label for="email">Email Address</label>
+		  			<input placeholder="yourname@example.com" type="text" id="email" required>
+		     	</div>
+		  		<div id="commentbox">
+		      	<label for="comment">Comments<textarea placeholder="What questions do you have for me?" id="comment" style="height:150px;" required></textarea></label>
+		    	</div>
+		   		<div id="continuediv">
+		      	<input id="continue" type="submit" value="Contact Us!">
+		     	</div>
+		  	</form>
+    	</div>
+		</div>
     <div class="flex3">
       <div class="footer">
         <h2>Information</h2>
       </div>
-      <nav class="members">
+      <nav class="information">
         <ul>
           <li><a href="bbc_about.html">About</a></li>
           <li><a href="bbc_contact.html">Contact</a></li>
